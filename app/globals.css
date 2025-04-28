@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@theme{
+  --color-main: rgba(25, 99, 66, 1);
+  --color-secondary: #206D49;
+  --color-tertiary: #B7E2AD;
+  --color-anothershade:#348C5C;
+  --color-cardfront:#4EA264;
+}
