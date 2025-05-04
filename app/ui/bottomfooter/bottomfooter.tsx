@@ -22,7 +22,7 @@ export default function BottomFooter() {
                 description="Learn about government schemes and subsides"
                 heading="Government Schemes"
                 image="/govt.png"
-                onClick={() => navigato("/page2")}
+                onClick={() => navigato("/govt-schemes")}
             />
             <Card
                 description="Know about the quality of your crops and soil"

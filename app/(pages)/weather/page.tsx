@@ -14,8 +14,12 @@ export default function Weather() {
     if (!city) return;
     setLoading(true);
     try {
-      const response = await fetch(`https://1014-2405-201-402f-d855-2370-8fb8-7c5e-bc68.ngrok-free.app/weather?city=${city}`);
-      const result = await response.json();
+      const response = await fetch(`https://plants-walking-employers-eur.trycloudflare.com/weather?city=${city}`);
+      console.log("Response from server:", response);
+      const rawText = await response.text();
+      console.log("Raw Response Body:", rawText);
+      const result = JSON.parse(rawText);
+      
       setWeatherData(result);
 
       // Save temporarily for another page if you want
